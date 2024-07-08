@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="vi">
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="/scripts/script.js"></script>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	         <link rel="icon" href="style/images/exlogo.ico" type="image/x-icon">
+
+      <title>GO ROLEPLAY - GTA5 VIỆT NAM</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      <link rel="stylesheet" href="/style/style.css">
+   </head>
+   <body>
+      <div id="myModal" class="modal">
+         <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Modal Image">
+         </div>
+      </div>
+      <div class="onepage">
+         <div class="navigation-container">
+            <div class="navigation" onclick="setActive(0); scrollToThrepage()">JOIN THE GAME</div>
+            <div class="navigation" onclick="setActive(1); scrollToFourPage()">IMAGE</div>
+            <div class="navigation" onclick="setActive(3); scrollToampage()">SOCIAL MEDIA</div>
+            <div class="navigation" onclick="setActive(4); scrollilet()">ABOUT US</div>
+            <a href="http://discord.gg" class="navigation" onclick="setActive(5);">DISCORD</a>
+         </div>
+         <div class="button-container">
+            <div class="button2"><a href="index.html">HOME</a></div>            <!-- Giriş yapıldığında bu kısmın görünür olmasını istiyorsunuz -->
+            <a href="pages/magza.php">
+        <div class="button">
+            <img src="./style/images/sepet.png" alt="Icon 1">
+        </div>
+    </a>
+            
+         </div>
+         <div class="text-container">
+            <span id="exprtt" class="exrp-text">GRP</span>
+            <span id="welcomeText" class="welcome-text">
+                WELCOME            </span>
+            <span class="what-ex">GRP GIỚI THIỆU</span>
+            <div class="text">
+               <span class="highlight">GRP</span>Cơ chế trò chơi của trò chơi rất tuyệt vời cho cả người quản lý trò chơi và người chơi.
+               Nó cung cấp sự linh hoạt. Tính linh hoạt này cho phép cách kể chuyện và lối chơi trở nên sâu sắc hơn, đồng thời
+               Nó cũng đảm bảo quản lý cân bằng chiến tranh và các yếu tố cơ học khác.
+            </div>
+            <button id="myButton">START PLAYING</button>
+         </div>
+         <div class="container">
+            <img src="./style/images/edüz.png" alt="Cofm34">
+            <div class="kari">
+               <img src="./style/images/kari.png" alt="Cofm34">
+            </div>
+            <div class="exrp">
+               <img src="./style/images/loo.png" alt="Cofm34">
+            </div>
+            <div class="loo2">
+               <img src="./style/images/loo2.png" alt="Cofm34">
+            </div>
+            <div id="loader-overlay">
+               <div class="loader"></div>
+            </div>
+         </div>
+      </div>
+      <div class="line-div">
+      </div>
+      <div class="twopage">
+         <div class="framgan">
+            <img src="./style/images/framgan.png" alt="Cofm34">
+            <div class="text-overlay">FRAGMANIMIZI İZLEDİN Mİ?</div>
+            <div class="text-overlay2">Sunucu Fragmanımız Sayesınde daha fazla bilgi alabilir sistemlere hakim
+               olabilirsiniz. <span class="highlight">İzlemek için hemen resimin üzerine tıklayın !</span>
+            </div>
+            <a id="start" href="https://www.youtube.com/watch?v=C4btW5n7b-o" target="_blank">
+               <img src="./style/images/pause.png" alt="İkon"> <!-- İkonun yolunu buraya ekleyin -->
+            </a>
+         </div>
+         <div class="backraund">
+         </div>
+         <div class="nokdalar">
+         </div>
+         <div class="ak47">
+         </div>
+         <div class="ak472">
+         </div>
+      </div>
+      <div class="line-div2">
+      </div>
+      <div class="threpage">
+         <div class="line-div3">
+            <span class="yagız">EKİP BAŞVURULARI</span>
+            <div class="para">
+               <img src="./style/images/para.png" alt="Cofm34">
+            </div>
+            <div class="agac">
+               <img src="./style/images/agac.png" alt="Cofm34">
+            </div>
+            <div class="agac2">
+               <img src="./style/images/agac2.png" alt="Cofm34">
+            </div>
+            <div class="bombe">
+               <img src="./style/images/BOMBE.png" alt="Cofm34">
+            </div>
+            <div class="legal">
+               <span class="legal-text">đội ngũ pháp lý</span>
+               <button id="alpege2">YAKINDA</button>
+               <span class="ayaz">DİSCORD ÜZERİNDEN KATILIN VE İLLEGAL MANAGER İLE GÖRÜŞÜP BAŞVURU GÖNDERİN ! KENDİ
+               EKİBİNİZ İLE GELMEK İÇİN DESTEK İLE BİZE ULAŞIN !</span>
+               <div class="zar">
+                  <img src="./style/images/zar.png" alt="Cofm34">
+               </div>
+            </div>
+            <div class="illegal">
+               <span class="illegal-text">ILLEGAL ekip</span>
+               <button id="alpege">YAKINDA</button>
+               <span class="ayaz">DİSCORD ÜZERİNDEN KATILIN VE İLLEGAL MANAGER İLE GÖRÜŞÜP BAŞVURU GÖNDERİN ! KENDİ
+               EKİBİNİZ İLE GELMEK İÇİN DESTEK İLE BİZE ULAŞIN !</span>
+            </div>
+         </div>
+      </div>
+      <div class="linee-div">
+      </div>
+      <div class="fourpage">
+         <div class="div1">
+            <div class="samifix1">EXRP</div>
+            <div class="edizke1">Ziac Martin</div>
+            <div class="image-container">
+               <img src="https://efe.is-pretty.cool/BgdzEcr.jpg"
+                  alt="Description of Image">
+            </div>
+         </div>
+         <div class="div2">
+            <div class="samifix2">EXRP</div>
+            <div class="edizke2">Denzel Benneth</div>
+            <div class="image-container2">
+               <img src="https://efe.is-pretty.cool/82otZ2G.png
+"
+                  alt="Description of Image">
+            </div>
+         </div>
+         <div class="div3">
+            <div class="samifix3">EXRP</div>
+            <div class="edizke3">Edwin Harold</div>
+            <div class="image-container3">
+               <img src="https://efe.is-pretty.cool/9G2sfdQ.png"
+                  alt="Description of Image">
+            </div>
+         </div>
+         <div class="div4">
+            <div class="samifix4">EXRP</div>
+            <div class="edizke4">John Dean</div>
+            <div class="image-container4">
+               <img src="https://efe.is-pretty.cool/85mZrxG.png"
+                  alt="Description of Image">
+            </div>
+         </div>
+         <div class="div5">
+            <div class="samifix5">EXRP</div>
+            <div class="edizke5">Alberto Riko</div>
+            <div class="image-container5">
+               <img src="https://efe.is-pretty.cool/9bHuipD.png
+"
+                  alt="Description of Image">
+            </div>
+         </div>
+         <div class="div6">
+            <div class="samifix6">EXRP</div>
+            <div class="edizke6">Axel Dean</div>
+            <div class="image-container6">
+               <img src="https://efe.is-pretty.cool/6echN4U.png"
+                  alt="Description of Image">
+            </div>
+         </div>
+         <span class="ediz">#OYUNDAN KARELER</span>
+         <div class="page3">
+            <img src="./style/images/page3.png" alt="Cofm34">
+         </div>
+      </div>
+      <div class="fivepage">
+         <span class="oyunca">POPÜLER OYUNCULAR</span>
+         <div class="elemani-box">
+            <div class="kutu">
+               <div class="prophile1">
+                  <img src="https://media.discordapp.net/attachments/1231036522850156634/1257417384097222718/acp8PXskv9bi-enhanced.png?ex=668454b2&is=66830332&hm=fab8ff7ff6c376544b3b16f038a1fc24ee67c5262d1e20cba542fb06b6e7fa31&=&format=webp&quality=lossless&width=526&height=701"
+                     alt="Description of Image">
+               </div>
+               <span class="title1">Diana Koslov</span>
+               <span class="meslek">MESLEK : EMS</span>
+               <span class="dogum">DOĞUM : 20.04.1994</span>
+               <span class="olusum">OLUSUM : EMS</span>
+            </div>
+            <div class="kutu">
+               <div class="prophile1">
+                  <img src="https://media.discordapp.net/attachments/1231036522850156634/1257413755474677921/Ekran20gC3B6rC3BCntC3BCsC3BC202024-05-1320010400-enhanced_1.png?ex=66845150&is=6682ffd0&hm=e55c4205a0a4bb58fffac1eacd80f003335a989dc042eb075da1bd17236997dc&=&format=webp&quality=lossless&width=470&height=350"
+                     alt="Description of Image">
+               </div>
+               <span class="title1">Lisa Laurence</span>
+               <span class="meslek">MESLEK : Serbest</span>
+               <span class="dogum">DOĞUM : 22.07.2001</span>
+               <span class="olusum">OLUSUM : Serbest</span>
+            </div>
+            <div class="kutu">
+               <div class="prophile1">
+                  <img src="https://media.discordapp.net/attachments/1256749481861320806/1257418866414456932/Ekran20gC3B6rC3BCntC3BCsC3BC202024-07-0120223052-enhanced.png?ex=66845613&is=66830493&hm=10d65b88b7ee272c9f65e41553af3bfef36fa0a1b16f982ca44fc4131a5722c6&=&format=webp&quality=lossless&width=1350&height=701"
+                     alt="Description of Image">
+               </div>
+               <span class="title1">Lenny  Da Silva</span>
+               <span class="meslek">MESLEK : Mekanik</span>
+               <span class="dogum">DOĞUM : 05.01.1995</span>
+               <span class="olusum">OLUSUM : dasilva</span>
+            </div>
+         </div>
+         <div class="line-div4">
+         </div>
+      </div>
+      </div>
+      <div class="line-div10"></div>
+      <div class="sixpage">
+         <div class="tacpng">
+            <img src="./style/images/tac.png" alt="tac Button">
+         </div>
+         <div class="tacpng2">
+            <img src="./style/images/tac.png" alt="tac Button">
+         </div>
+         <div class="page6">
+            <img src="./style/images/gorup6.png" alt="Cofm34">
+            <div class="baslik2">EX ŞEHRİNE KATILIN</div>
+            <div class="whoexp">EXRP KIMDIR ? </div>
+            <div class="discord">
+               <a href="https://discord.gg/CvDaTdGg" target="_blank">
+               <img src="./style/images/discord.png" alt="Discord Button">
+               </a>
+            </div>
+            <div class="instagram">
+               <a href="https://www.instagram.com/exaltacity/" target="_blank">
+               <img src="./style/images/instagram.png" alt="Instagram Button">
+               </a>
+            </div>
+            <div class="youtube">
+               <a href="https://www.youtube.com/@EXRP-jw3vg" target="_blank">
+               <img src="./style/images/youtube.png" alt="YouTube Button">
+               </a>
+            </div>
+            <div class="turbo">
+               <a href="https://discord.gg/yc4WYKvr" target="_blank">
+               <img src="./style/images/turbo.png" alt="Turbo Button">
+               </a>
+            </div>
+            <div class="level">
+               <img src="./style/images/ucakke.png" alt="Turbo Button">
+            </div>
+            <div class="goals-container">
+               <table>
+                  <tr>
+                     <td>BAŞLANGIÇ 0.03.2024</td>
+                     <td>FİVEM LİST 2. SIRAYA YERLEŞTİK</td>
+                     <td>3 AY BOYUNCA BETA SÜRÜM SORUNSUZ GEÇRİDİK</td>
+                     <td>Sunucumuzu Yaz aylarına hazırlamak için kapsamlı script,sistem değişiklerine gidildi</td>
+                     <td>Q2 2024 Ekonomik Düzenlemeler Scripstel Gelişmeler ve Geliştirmeler</td>
+                     <td>Q3 2024 - wipe Season 2 - asıl başlangıç,sciptsel Geliştirmeler</td>
+                     <td>Fivemin en büyük sunucusu</td>
+                     <td>Q4 2024 2.Sunucu Açılışı</td>
+                  </tr>
+               </table>
+            </div>
+            <div class="staff1">
+               <span class="staffteee">EKİP</span>
+               <span class="projeown">Proje Sahibi</span>
+               <span id="xanaxButton" class="xanax" data-image="./style/images/alpege.png">X$NAX</span>
+               <span class="founder1">FOUNDER</span>
+               <span class="founder2">FOUNDER</span>
+               <span id="dutbutton" class="fond1" data-image="./style/images/ediz.png">EDİZ</span>
+               <span id="edizButton" class="fond2" data-image="./style/images/kaan.png">DUTCH</span>
+               <span class="devtop">Deveolper-Designer</span>
+               <span id="nahutabbutton" class="nahutab" data-image="./style/images/code.jpg">Nahutab</span>
+               <span id="dutbutton2" class="edizz" data-image="./style/images/ediz.png">EDİZ</span>
+               <span id="aw3rquebb" class="aw3rque" data-image="./style/images/code.jpg">aw3rque</span>
+            </div>
+         </div>
+      </div>
+      <div class="line-div15">
+      </div>
+      <div class="sevenpage">
+         <div class="page7">
+            <img src="./style/images/buneamk.png" alt="Cofm34">
+            <div class="logosex">    
+               <img src="./style/images/logopu.png" alt="Cofm34">
+            </div>
+            <span id="kural" class="kural">Sunucu Kuralları</span>
+            <span id="politika" class="politika">Gizlilik Politikası</span>
+            <span id="sart" class="sart">Hizmet Şartları</span>
+            <div id="kuralModal" class="modall">
+               <div class="modall-content">
+                  <span class="close" id="kuralClose">&times;</span>
+                  <h2>SUNUCU KURALLARI</h2>
+                  <p>Saygılı Davranış: Diğer oyunculara ve sunucu yönetimine karşı saygılı olun.</p>
+                  <p>Hile ve Dolandırıcılık Yasak: Oyun içi hileler, exploitler ve haksız avantaj sağlayan her türlü yöntem yasaktır.</p>
+                  <p>Roleplay Kuralları: Eğer bir RP sunucusu ise, karakterler arası etkileşimlerde gerçekçi ve kurallara uygun davranılmalıdır.</p>
+                  <p>Meta Oyun ve Bilgi Kullanımı: Oyun dışı bilgileri oyun içinde kullanmak (meta gaming) yasaktır.</p>
+                  <p>Chat Kuralları: Genel sohbet kanallarında kabalık, argo veya rahatsız edici davranışlar yasaktır.</p>
+                  <p>Yasaklı İçerikler: Yasal olmayan içerikler, nefret söylemi, cinsel içerik ve benzeri paylaşımlar yasaktır.</p>
+                  <p>Reklam ve Spam: Diğer sunucuları veya web sitelerini tanıtmak, spam yapmak yasaktır.</p>
+                  <p>Oyun Dışı Tartışmalar: Oyun dışı siyasi, dini veya hassas konuların tartışılması genelde yasaktır.</p>
+                  <p>Yetkili Talimatlarına Uyma: Sunucu yöneticilerinin ve moderatörlerinin talimatlarına uymak zorunludur.</p>
+                  <p>Oyun Deneyimini Engelleme: Diğer oyuncuların oyun deneyimini kasıtlı olarak engellemek veya bozmak yasaktır.</p>
+                  <p>Bölge Kısıtlamaları: Belirli bölgelerde (örneğin, hastane veya polis karakolu gibi) kurallara özel davranma gerekliliği.</p>
+                  <p>Karakter Adı ve Kimlik Kullanımı: Gerçek dünyadan alınmış veya rahatsız edici karakter adları kullanmak yasaktır.</p>
+                  <p>Düzenli Oyun Zamanı: Sunucunun belirlediği saatlerde oyuna katılım zorunluluğu veya kuralları.</p>
+                  <p>İçerik Paylaşımı: Oyun içi veya sunucu içi materyallerin izinsiz paylaşımı yasaktır.</p>
+                  <p>Araç ve Eşya Kullanımı: Sunucunun belirlediği kurallara göre araç veya eşya kullanımı.</p>
+                  <p>Oyuncu Grupları ve Organizasyonlar: Belirli grup veya organizasyonlara katılım ve davranış kuralları.</p>
+                  <p>Moderasyon ve Şikayetler: Moderatör kararlarına saygılı olunması ve şikayetlerin uygun yollarla iletilmesi.</p>
+                  <p>Yasal Sorumluluklar: Yasalara aykırı davranışların sunucu üzerinden gerçekleştirilmemesi.</p>
+                  <p>Kuralların Güncellenmesi: Sunucu yönetiminin zaman zaman kuralları güncelleme ve değiştirme hakkı.</p>
+                  <p>Topluluk Kuralları: Topluluğun sağlıklı işleyişi için belirlenen genel kurallar ve yönergeler.</p>
+               </div>
+            </div>
+            <div id="politikaModal" class="modal">
+               <div class="modal-content">
+                  <span class="close" id="politikaClose">&times;</span>
+                  <h2>Gizlilik Politikası</h2>
+                  <p>Buraya gizlilik politikasını yazın...</p>
+               </div>
+            </div>
+            <div id="sartModal" class="modal">
+               <div class="modal-content">
+                  <span class="close" id="sartClose">&times;</span>
+                  <h2>Hizmet Şartları</h2>
+                  <p>Buraya hizmet şartlarını yazın...</p>
+               </div>
+            </div>
+            <span class="sade">Ulaşım Bilgileri;</span>
+			  <span class="telefon">Telefon Numarası: +5324168181</span>
+            <span class="adres">Adres: AYAZAĞA MAH. HADIMKORU YOLU CAD. NO: 3 İÇ KAPI NO: 1
+            SARIYER/ İSTANBUL</span>
+
+            <a href="mailto:info@exaltav.com"><span class="mail">info@exaltav.com</span></a>
+            <div class="social-icons">
+               <a href="https://discord.gg/CvDaTdGg" target="_blank" class="icon">
+               <i class="fab fa-discord"></i>
+               </a>
+               <a href="https://www.instagram.com/exaltacity/" target="_blank" class="icon">
+               <i class="fab fa-instagram"></i>
+               </a>
+            </div>
+            <div class="footer">
+               <p>WebSite By</p>
+               <p>Nahutab, Ediz</p>
+               <p><a href="https://discord.gg/edizz" target="_blank">discord.gg/edizz</a></p>
+               <p><a href="https://discord.gg/turboscripts" target="_blank">discord.gg/turboscripts</a></p>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
